@@ -1,30 +1,26 @@
 import React from 'react'
 
 export const SecondComponent = () => {
-    const books = [
-        "Harry Potter y la piedra filosofal",
-        "Harry Potter y la cámara secreta",
-        "Harry Potter y el prisionero de Azkaban",
-        "Harry Potter y el cáliz de fuego",
-        "Harry Potter y la Orden del Fénix",
-        "Harry Potter y el misterio del príncipe",
-        "Harry Potter y las Reliquias de la Muerte"
-    ];
-
-    //const books = [];
-
+   const Books = [
+      "MAYOR QUE TODO - CARLOS FRAIJA",
+      "DE LA CARENCIA A LA ABUNDANCIA - CARLOS FRAIJA",
+      "EL PODER DEL AHORA - ECKHART TOLLE",
+      "EL SENGOCIO DEL SIGLO 21 - ROBERT T. KIYOSAKI",
+      "HABLA MENOS Y ACTUA MAS - BRIAN TRACY"
+    ]
+   
   return (
     <div>
-        <h2>Listado de libros</h2>
+        <h2>LISTADO DE LIBROS</h2>
         <ul>
-            {
-                books.length >= 1 ?
-                (
-                        books.map((book, index) => {
-                            return <li key={index}>{book}</li>
-                        })
-                ) : "No existen libros."
-            }
+          {
+            Books.length > 1 ? 
+            (
+              Books.map((Book, index) =>{
+                return <li key={index}>{Book}</li>
+            })
+            ): "No exiten libros."
+          }
         </ul>
     </div>
   )
